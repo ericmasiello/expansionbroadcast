@@ -1,0 +1,212 @@
+/*********************************************************
+1. Basic Elements
+2. Form Elements
+3. Page Structure
+ 3a. Header
+ 3b. Content
+ 3c. Footer
+ 3d. Sidebar
+ 3e. Comments
+4. Special Pages
+5. Special Styles
+ 5a. Navigation Prev/Next
+ 5b. Powerpress
+ 5c. Track List
+*********************************************************/
+body{
+	color:#333;
+	/*font-family: Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;*/
+	font-family: sans-serif;
+	font-size:12px;
+	line-height:20px;
+}
+h1, h2, h3, h4, h5, h6, input, textarea, .postdate, .powerpress_links a, #sidebar .vevent .description, .comment-author cite, legend{
+	font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;
+}
+h1{
+	text-transform:uppercase;
+}
+h1, h2{
+	font-weight:bold;
+}
+h2{
+	font-size:30px;
+	letter-spacing:-0.05em;
+	line-height:35px;	
+}
+.search-no-results h2{
+	text-transform:none;	
+}
+h3{
+	font-size:25px;
+	letter-spacing:-0.05em;
+	line-height:30px;
+}
+.entry h3{
+	font-size: 14px;
+	font-weight:normal;
+	line-height: 20px;	
+	text-transform: uppercase;
+}
+a:link{
+	color:#333;	
+}
+a:visited{
+	color:#06537e;	
+}
+a:hover{
+	color:#007BBF;	
+}
+#search input{
+	font-size:15px;
+	line-height:20px;	
+}
+h2 a, h3 a{
+	text-decoration:none;		
+}
+h2 .genre, h2 .subtitle, h3 .genre, h3 .subtitle{
+	color:#555;
+	display:block;
+	font-size:22px;
+	font-weight:normal;
+	line-height:25px;
+	text-transform:uppercase;
+}
+h3 .genre, h3 .subtitle{
+	text-transform:capitalize;	
+}
+ins{
+	text-decoration:none;	
+}
+blockquote{
+	font-style:italic;	
+}
+legend span{
+	font-size:16px;
+	font-weight:bold;
+	line-height:20px;	
+}
+input,textarea{
+ 	font-size:14px;              
+} 
+.subtitle span, .genre span{
+	font-family:"Goudy Old Style","Palatino","Book Antiqua",Georgia,serif;
+	font-size:22px;	
+	font-style:italic;
+	font-weight:bold;
+}
+.postmetadata{
+	font-size:11px;
+	font-weight:bold;
+	line-height:15px;
+}
+.home .postmetadata, .search .postmetadata, .tag .postmetadata, .archive .postmetadata{
+	text-align:right;
+}
+.postmetadata .comment{
+	font-weight:normal
+}
+.postmetadata a{
+	color:#555;	
+}
+.error404 h2{
+	text-transform:none;
+}
+.error404 h2 .subtitle{
+	color:#d60000;
+}
+.powerpress_links {
+	font-size:0;
+}
+.powerpress_links a{
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;	
+	text-transform:uppercase;
+}
+.powerpress_links a:hover{
+	color:#007BBF;
+}
+#sidebar h2, #links h2,
+.social-footer h2{
+	font-size:15px;
+	line-height:20px;
+}
+#sidebar .vevent h2{
+	font-size:20px;
+	line-height:25px;
+}
+#sidebar .vevent .description{
+	font-size:14px;	
+	font-weight: bold;
+	line-height:20px;
+	text-transform: uppercase;
+	
+}
+#sidebar .vevent p.description{
+	font-size:15px;
+	font-weight:normal;
+	line-height:20px;
+	text-transform:none;	
+}
+#sidebar dd{
+	font-size:11px;
+	line-height:15px;	
+}
+.vevent .dtstart{
+	color:#666;
+	font-size:14px;
+	font-weight:normal;
+	letter-spacing:0;
+}
+.tweet-this{
+	color:#333;
+	font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;
+	font-size:15px;
+	line-height:20px;
+	text-decoration:none;
+}
+
+.tweet-this a{
+	color: #fff;
+	text-decoration: none;
+}
+#twitter-follow{
+	color:#333;
+	font-weight:bold;
+}
+li.current-cat a{
+	color:#fff;	
+}
+li.current-cat ul a{
+	color:#333;	
+}
+#twitter-follow:hover{
+	color:#fff;
+}
+#comments h3{
+	font-size:22px;
+	line-height:25px;	
+}
+#comments h3 em{
+	font-style:normal;
+	font-weight:bold;
+}
+.comment-author cite a{
+	font-size:11px;
+	font-style:normal;
+	font-weight:bold;
+	line-height:15px;
+	text-decoration:none;
+}
+.tease{
+	font-style:italic;
+	line-height:1.5em;
+}
+.error{
+	color:#d60000;
+}
+input[type="button"], input[type="submit"], input[type="reset"], button{
+	color:#222;
+	font-weight:bold;
+}

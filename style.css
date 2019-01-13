@@ -1,0 +1,35 @@
+/*
+Theme Name: EXBC
+Theme URI: http://www.expansionbroadcast.com
+Description: 
+Version: 3.9.1
+Author: Eric Masiello
+Author URI: http://synbydesign.com
+Clouds, Helvetica, blue, white
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Hind:500);
+@import "style-typography.css";
+@import "style-layout.css";
+@import "style-enrichment.css";
+
+object, embed {
+	max-width: 100%;
+}
+
+img {
+	box-sizing: border-box;
+}
+
+.ad {
+     border-radius: 5px;
+     background-color: rgba(0, 130, 255, 0.3);
+     font-weight: bold;
+     padding: 5px 10px;
+}
+
+.callout {
+
+     background-color: #eee; 
+     padding: 10px;
+}

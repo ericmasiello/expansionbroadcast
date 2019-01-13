@@ -1,0 +1,902 @@
+/*********************************************************
+1. Basic Elements
+2. Form Elements
+3. Page Structure
+ 3a. Header
+ 3b. Content
+ 3c. Footer
+ 3d. Sidebar
+ 3e. Comments
+4. Special Pages
+5. Special Styles
+ 5a. Navigation Prev/Next
+ 5b. Powerpress
+ 5c. Track List
+*********************************************************/
+
+/* =1. Basic Elements ***********************************/
+body{
+	background:#f1f1f1;
+	margin:0;
+	padding:0;
+}
+h2, h3 {
+	border-color:#999;
+	border-style:solid;
+	border-width:0 0 1px;
+	margin:0 0 15px;
+}
+h3{
+	margin:0 0 10px;	
+}
+h2 a, h3 a{
+	display:inline-block;	
+}
+ul{
+	list-style-type:square;	
+}
+ul, ol{
+	padding:0;
+	margin:0 0 10px;
+}
+li{
+	
+}
+ins{
+	border-color:rgb(170, 170, 170);
+	border-style:dotted;  
+	border-width:0 0 1px; 
+}
+a img{
+	border-style:none;	
+}
+blockquote{
+	clear:both;	
+}
+/* =2. Form Elements ************************************/
+label{
+	cursor:pointer;
+	display:block;
+}
+input, textarea, select{
+	border-color:#BBBBBB #BBBBBB #DDDDDD;
+	border-style:solid;
+	border-width:2px 1px 1px;	
+}
+input, textarea{
+	padding:4px 3px 3px;
+}
+input[type=text], input[type=password]{
+	width:400px;
+}
+input[type=button],input[type=submit],input[type=reset],button{
+	background-color:#ababab;
+	border-color:#aaa #aaa #999;
+	border-width:1px 1px 2px;
+	cursor:pointer;	
+	padding:4px 7px 3px;
+}
+textarea{
+	width:550px;	
+}
+fieldset{
+	border-style:none;
+	padding:0;	
+}
+fieldset div{
+	margin:0 0 5px;
+}
+legend span{
+	left:-3px;
+	position:relative;	
+}
+/* =3. Page Structure ***********************************/
+.wrapper{
+	margin:0 auto;
+	padding:0 10px;
+	position:relative;
+	width: 100%;
+	max-width:1050px;  
+}
+/* =3a. Header ******************************************/
+#header{
+	
+}
+#header .wrapper{
+	margin:10px auto 0;
+	padding:50px 10px 0;
+}
+#header h1{
+	background:transparent url(images/exbc_header.png) no-repeat scroll 0 0;
+	background-size: 100% auto; /* needed to make sure background image scales on iPhones, etc */
+	display:block;
+	height:120px;
+	margin:0 0 0 -38px;
+	overflow:hidden;
+	text-indent:-9999px;
+	width:1084px;
+}
+#header h1 a{
+	display: block;
+	height: 60px;
+	width: 560px;
+}
+#header h2{
+	position:absolute;
+	left:-9999px;	
+}
+#search{
+	border-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:20px;
+	top:0px;
+}
+#search label{
+	position:absolute;
+	left:-9999px;	
+}
+#s{
+	width:163px;	
+}
+#s:focus{
+	width:17em;	
+}
+#search input[type=submit]{
+	background:#2e8cc0;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: normal;
+}
+#controls{
+	height: 22px;
+	left: 22px;
+	list-style-type: none;
+	/*overflow: hidden;*/
+	position: absolute;
+	top: 122px;
+	width: 690px;
+	z-index: 99999;
+}
+
+#controls li{
+	float: left;
+}
+
+#controls a,
+#controls span{
+	display: block;
+	height: 22px;
+	position: absolute;
+	text-indent: -9999px;
+	z-index: 99999;
+}
+
+#controls .itunes{
+	left: 0;
+	width: 148px;
+}
+
+#controls .rss{
+	left: 160px;
+	width: 130px;
+}
+
+#controls .twitter{
+	left: 300px;
+	width: 130px;
+}
+#controls .facebook{
+	left: 445px;
+	width: 120px;	
+}
+
+#controls .listen{
+	left: 580px;
+	height: 80px;
+	width: 120px;
+}
+
+#controls .listen + ul{
+	background: url('images/listen-live.png') no-repeat 0 0 transparent;
+	display: none;
+	
+	height: 104px;
+	list-style-type: none;
+	left: 569px;
+	padding-top: 45px;
+	padding-left: 30px;
+	position: absolute;
+	top: -21px;
+	width: 146px;		
+}
+
+#controls .listen + ul li{
+	float: none;
+	margin-bottom: 3px;
+}
+
+#controls .listen + ul a{
+	display: block;
+	position: relative;
+	width: 96px;
+	z-index: 999999;
+}
+
+#controls .listen:hover + ul{
+	
+	
+	display: block;
+	
+}
+
+
+
+/* =3b. Content *****************************************/
+
+#content > .wrapper{
+	background: #fff;
+}
+
+#content > .wrapper:after{
+	content: '';
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+
+#main-content, #sidebar{
+	background-color:#fff;
+	float:left;
+}
+#main-content{
+	margin:0;
+	padding:0 30px 0 10px;
+	width: 73.33333333%;
+	max-width:770px;	
+}
+h2 a:hover{
+	background-color:#DAECF6;	
+}
+h2 .genre, h2 .subtitle, h3 .genre, h3 .subtitle{
+	margin:0;
+}
+#main-content h3{
+	margin:0 0 5px;
+}
+.post{
+	clear:both;
+}
+.post, .page{
+	margin:20px 0;
+	position:relative;	
+}
+
+.post ol,
+.page ol,
+.post ul,
+.page ul{
+	margin-left: 20px;
+}
+
+body.page{
+	margin:20px 0 0;
+}
+.home .postmetadata, .search .postmetadata, .tag .postmetadata, .archive .postmetadata{
+	left:-125px;
+	position:absolute;
+	padding:35px 0 0;
+	width:100px;	
+}
+.home .postmetadata{
+	margin:-51px 0 0;
+}
+.search .postmetadata, .tag .postmetadata, .archive .postmetadata{
+	margin:-41px 0 0;
+}
+.home .postmetadata, .search .postmetadata, .tag .postmetadata, .archive .postmetadata{
+	background:transparent url(images/news-icon.png) no-repeat scroll 60px 0;
+}
+.home .category-podcast .postmetadata, .search .category-podcast .postmetadata,
+.tag .category-podcast .postmetadata, .archive .category-podcast .postmetadata{
+	background:transparent url(images/podcast-icon.png) no-repeat scroll 60px 0;
+}
+.postmetadata p{
+	margin:0;	
+}
+.postmetadata .postdate{
+	border-color:#999;
+	border-style:solid;
+	border-width:1px 0 0;
+}
+.home .postmetadata .postdate{
+	padding:5px 0 0;	
+}
+
+.entry h3{
+	border-style:none;
+}
+.entry img{
+	border: 15px solid #E9EEF4;
+	display: block;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 730px;
+}
+
+.entry img.alignnone{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.entry img.left, .entry img.alignleft, .entry img.right, .entry img.alignright{			
+	height: auto;
+	max-height: 500px;
+	max-width:400px;
+	width: auto;
+}
+.entry img.left, .entry img.alignleft{
+	float:left;
+	margin-right:40px;
+}
+.entry img.right, .entry img.alignright{
+	float:right;
+	margin-left:20px;	
+}
+.admin{
+	clear:both;
+	float:left;	
+}
+
+.entry .tags {
+
+	border-color: #999;
+	border-width: 1px 0;
+	border-style: solid;
+	clear: both;
+	opacity: .75;
+	padding: 10px;
+}
+
+.wp-image-2196,
+.wp-image-2193,
+.wp-image-1509,
+.wp-image-1512,
+.wp-image-1422,
+.wp-image-1504,
+.wp-image-1415,
+.wp-image-1511,
+.wp-image-1421,
+.wp-image-1503,
+.wp-image-1414,
+.wp-image-1507,
+.wp-image-1419,
+.wp-image-1347,
+.wp-image-1508,
+.wp-image-1418,
+.wp-image-1506,
+.wp-image-1417,
+.wp-image-1505,
+.wp-image-1416,
+.wp-image-2493{
+	border-width:0 !important;  /*these are for the premade polaroid images that we don't want to add the polaroid look to*/
+}
+#main-content .social{
+	clear:both;
+}
+/* =3c. Footer ******************************************/
+#links{
+	border-color:#999;
+	border-style:double;
+	border-width:3px 0 0;
+	clear:both;
+	margin-left: 0;
+	margin-top:50px;	
+	padding-top:27px;
+}
+#links:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#links ul{
+	margin: 0;
+	padding: 0;
+}
+
+#links>li{
+	float: left;
+	list-style-type: none;
+	width: 180px;
+}
+#links li:nth-child(1), #links li:nth-child(2), #links li:nth-child(3){
+	margin: 0 15px 0 0;	
+}
+
+#links li:nth-child(2){
+	width: 185px;
+}
+
+
+#links li ul{
+	list-style-type: none;
+}
+
+#footer{
+	/*background:#fff url(images/hills.png) repeat-x fixed left bottom;*/
+	position:relative;
+	z-index:-1;
+}
+#footer .wrapper{
+	/*background:transparent url(images/grass.png) repeat-x fixed 50% bottom;*/
+	margin:0;
+	padding:0 0 130px;
+	width:auto;
+}
+#footer .wrapper .wrapper{
+	background:none;
+	margin:auto;
+	padding:0 250px 0 70px;
+	width:700px;
+}
+#footer p{
+	visibility:hidden;	
+}
+
+.social-footer{
+	clear: both;
+	overflow: hidden;
+}
+
+.social-footer > div{
+	float: left;
+	width: 370px;
+}
+
+.social-footer > div:first-child{
+	margin-right: 30px;
+}
+
+/* =3d. Sidebar *****************************************/
+#sidebar{
+	padding:35px 0 10px 20px;
+	width: 26.666666667%;
+ 	max-width:280px;
+}
+.tag #sidebar{
+	padding-top:25px;	
+}
+.search #sidebar{
+	padding-top:15px;	
+}
+.archive #sidebar{
+	padding-top:34px;	
+}
+.home #sidebar{
+	padding-top:45px;	
+}
+#sidebar.subtext{
+	padding-top:60px;	
+}
+#sidebar li{
+	list-style-type:none;	
+}
+#sidebar h2{
+	margin:0 0 10px;	
+}
+#sidebar .vevent h2{
+	margin:0 0 10px;	
+}
+#sidebar ul.nav{
+	list-style-type:none;	
+}
+#sidebar ul.nav ul{
+	list-style-type:square;	
+}
+#sidebar .description{
+	list-style-type: square;			
+}
+
+#sidebar ul.description{
+	background: rgba(240, 246, 254, .5);
+	border: 1px solid #DEDEDE;
+	padding: 5px 10px 0 10px;
+}
+
+#sidebar .description li{
+	list-style-type: none;
+    padding:0 0 5px;
+}
+
+#sidebar .vevent, #sidebar .ad {
+
+	margin: 20px 0;
+}
+
+img, .entry img {
+	max-width: 100%;
+	height: auto;
+}
+
+#content > .wrapper, 
+#main-content, #sidebar {
+
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1250px) {
+
+	.postmetadata {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+
+
+	#header h1 {
+		width: 565px;
+		height: 60px;
+		background-size: auto;
+		margin: 0;
+
+	}
+	#controls a, #controls span {
+		position: static;
+		text-indent: 0;
+		height: auto;
+	}
+
+	#controls li {
+		float: none;
+	}
+	#controls {
+		height: auto;
+		position: static;
+		width: auto;
+		display: none;
+	}
+}
+
+@media screen and (max-width: 960px) {
+
+	*, *:before, *:after {
+
+		box-sizing: border-box;
+	}	
+
+	#main-content, #sidebar {
+		float: none;
+		width: 100%;
+		max-width: none;
+		padding: 0;
+	}
+	
+	.wrapper, #footer .wrapper .wrapper {
+		
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 770px){
+
+	img, .entry img,
+	.entry img.alignright,
+	.entry img.right,
+	.entry img.alignleft,
+	.entry img.left {
+		float: none;
+		margin: 0;
+		max-width: 100%;
+		max-height: none;
+	}
+}
+
+@media screen and (max-width: 565px) {
+
+	#header .wrapper {
+
+		overflow: hidden;
+		padding: 0 10px;
+	}
+
+	#header h1 {
+		width: 60px;
+		margin: 10px auto;
+	}
+
+	#search {
+		position: static;
+	}
+	
+	#s, #s:focus, #search input[type=submit] {
+		width: 100%;
+	}
+}
+
+
+
+.vevent .dtstart{
+	border-style:none;
+}
+.vevent .time, .vevent .superfluous, .vevent .dtend, .vevent .summary{
+	position:absolute;
+	left:-9999px;	
+}
+#sidebar .similar li, #sidebar .popular li{
+	list-style-type:square;	
+}
+
+/*.categories li a, */ #twitter-follow{
+	display:block;
+	float:left;	
+	padding:5px 5px 2.5px 5px;
+}
+
+/*.categories li a:hover, */ #twitter-follow:hover{
+	
+}
+
+li.current-cat a{
+	background-color:#333;	
+}
+li.current-cat ul a{
+	background-color:transparent;	
+}
+#twitter_update_list li{
+	background-color:#F0F6FE;
+	margin:0 0 10px;
+	padding:10px;
+}
+#twitter_update_list li span:after{	
+	content:close-quote;
+}
+
+.featured-mixes{
+	clear: both;
+}
+
+.featured-mixes li{
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+	.featured-mix-photo{
+		-moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);	
+		-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);	
+		box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+	
+		display: inline-block;		
+		position: relative;
+		text-decoration: none;
+		
+		
+	}
+	
+		.featured-mix-photo img{
+			border: 5px solid #E9EEF4;
+			display: block;
+		}
+		
+		.featured-mix-title{
+			background-color: rgba(255, 255, 255, .65);
+			bottom: 5px;
+			display: block;
+			font-size: 12px;		
+			left: 5px;
+			line-height: 15px;
+			padding: 5px;
+			position: absolute;		
+			width: 210px;			
+		}
+		
+			.featured-mix-title h4{
+				margin: 0;
+			}
+		
+				.featured-mix-title .subtitle{			
+					font-size: 11px;
+					text-transform: none;
+				}
+				
+					.featured-mix-title .subtitle > span{
+						font-family: Helvetica,"Helvetica Neue",Arial,sans-serif;
+						font-size: 11px;					
+					}
+
+#main-content .featured-mixes h2{
+	font-size: 15px;
+	line-height: 20px;
+}
+					
+#main-content .featured-mixes li{
+	display: inline-block;
+	margin-right: 35px;
+}
+
+#main-content .featured-mixes li:nth-child(3n){
+	margin-right: 0;
+}
+
+	#main-content .featured-mix-photo{
+		margin-left: 0;	
+	}
+
+
+
+/* =3e. Comments ****************************************/
+#respond, #comments{
+	clear:both;	
+}
+.commentlist li{
+	list-style-type:none;
+	position:relative;
+}
+.commentlist li .comment-body{
+	margin:0 0 10px;
+	padding:5px;	
+}
+.commentlist li ul{
+	margin:0 0 0 20px;	
+}
+.comment-author{
+	left:-110px;
+	position:absolute;
+	width:100px;	
+}
+.comment-author img{
+	display:block;
+	height:30px;
+	margin:0 0 5px 60px;
+	width:30px;	
+}
+.comment-author cite{
+	border-color:#999;
+	border-style:solid;
+	border-width:1px 0 0;
+	display:block;
+	padding:4px 0 0;
+	text-align:right;
+}
+.says{
+	position:absolute;
+	left:-9999px;	
+}
+.reply{
+	text-align:right;	
+}
+#comment{
+	width:630px;	
+}
+
+/* =4. Special Pages ************************************/
+#contact-form{
+	border-color:#999;
+	border-style:solid none none;
+	border-width:5px;
+	padding:20px 0 0;	
+}
+.page-template-contact-php #contact-form{
+	border-style:none;
+	padding:0;	
+}
+.page-template-contact-php legend{
+	display:none;	
+}
+.error404 #main-content img{
+	float:left;
+	margin:0 0 0 -120px;
+}
+.error404 #contact-form{
+	border-style:none;
+	padding:10px 0 0;
+}
+/* =5. Special Styles ***********************************/
+.error{
+	background-color:#f7ffd4;	
+}
+#contact-form.success{
+	background-color:#ddffb0;
+	margin:-10px;
+	padding:10px;	
+}
+/* =5a. Navigation Prev/Next ****************************/
+.navigation{
+	border-color:#999;
+	border-style:dotted;
+	border-width:1px 0;
+	clear:both;
+	list-style-type:none;
+	margin:20px 0;
+	padding:19px 0;
+	overflow:hidden;
+}
+.navigation a{
+	border:2px solid #999;
+	display:block;
+	font-size:15px;
+	line-height:20px;
+	padding:7px;
+	text-decoration:none;
+}
+.navigation a:hover{
+	background-color:#DAECF6;	
+}
+.navigation .previous{
+	float:right;	
+}
+.navigation .next{
+	float:left;	
+}
+/* =5b. Powerpress **************************************/
+.powerpress_player{
+	float:left;
+	margin: -8px 20px 0 0;
+	position:relative;
+	z-index: 9999; /* makes sure this is on top of the text area displaying the download link */
+}
+.powerpress_player embed, .powerpress_player a{
+	position:absolute;
+	top:-7px;
+	z-index:9999;	
+}
+.search-results .powerpress_player embed, .search-results .powerpress_player a,
+.archive .powerpress_player embed, .archive .powerpress_player a{
+	top:0;	
+}
+.search-results .powerpress_links a, .archive .powerpress_links a{
+	top:-2px;	
+}
+.powerpress_links{
+	border-color:#999999;
+	border-style:dotted;
+	border-width:0 0 1px;
+	height:24px;
+	margin-bottom:18px;
+	position:relative;
+	text-indent:-5000px;
+}
+
+.powerpress_links_m4a{
+	height:245px;	
+}
+
+.powerpress_links a{	
+	border-radius: 3px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 19px;	
+	overflow:hidden;	
+	text-transform: none;
+	padding: 4px 7px 1px;
+	display: inline-block;
+	background: #a81f13;
+	position: absolute;
+	right:0;
+	text-align: center;
+	text-indent:0;	
+	top:-7px;
+}
+.powerpress_links a:hover{
+	background-color: #8f1a10;
+	color: #fff;
+}
+/* =5c. Track List **************************************/
+.tease{
+	display:block;
+	position:relative;
+}
+.tease:before{
+	content: '\000BB';
+	left:-19px;
+	font-size: 140%;
+	position: absolute;
+}
